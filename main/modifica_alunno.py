@@ -1,37 +1,6 @@
 import os
 import json
 
-FILE_PATH = "studenti.json"
-
-def clear_terminal():
-    # os.system("cls" if os.name == "nt" else "clear")
-    print("\033[2J\033[H", end="")
-
-def search_students(to_modify):
-    # student is already a dictionary containing all fields
-
-    # Column names and values
-    columns = list(to_modify.keys())
-    values = [str(to_modify[col]) for col in columns]
-
-    # Calculate column widths
-    col_widths = [
-        max(len(columns[i]), len(values[i])) for i in range(len(columns))
-    ]
-
-    # Header
-    header = " ║ ".join(columns[i].ljust(col_widths[i]) for i in range(len(columns)))
-    separator = "═" * len(header)
-    print(separator)
-    print(header)
-    print(separator)
-
-    # Row of values
-    line = " ║ ".join(values[i].ljust(col_widths[i]) for i in range(len(values)))
-    print(line)
-
-    print(separator)
-
 def modifica_aluno():
     exit = False
     while not exit:
@@ -51,12 +20,12 @@ def modifica_aluno():
             # if yes then proceed to update the details
             # if no then it should ask to try again
             matricola_update = input("Please enter the matricola : ")
-            if os.path.exists("studenti.json"):
+            if os.path.exists("../studenti.json"):
                 try:
-                    with open("studenti.json", "r") as f:
+                    with open("../studenti.json", "r") as f:
                         data = json.load(f)
                 except json.JSONDecodeError:
-                    data ={}
+                    data = {}
 
             else:
                 data = {}
@@ -64,7 +33,26 @@ def modifica_aluno():
 
             if to_modify:
                 clear_terminal()
-                view_students(to_modify)
+                search_students_by_matricola(to_modify)
+                is_it_right = input("Is this the one you've been searching for ???? Y/N : ? y/n : ")
+                if is_it_right == "Y":
+                    select_changes_to_alunni = int(input(
+                                          "╔══════════════════════════════════════════════════════════╗\n"
+                                          "║                     MODIFICA  ALUNNI                     ║\n"
+                                          "╠══════════════════════════════════════════════════════════╣\n"
+                                          "║     Please select an option from the following menu :    ║\n"
+                                          "╠══════════════════════════════════════════════════════════╣\n"
+                                          "║ 1. Change Name                                           ║\n"
+                                          "║ 2. Change sirname                                        ║\n"
+                                          "║ 3. change email                                          ║\n"
+                                          "║ 4. Change Name + Sirname +                               ║\n"
+                                          "║                                                          ║\n"
+                                          "╚══════════════════════════════════════════════════════════╝\n"
+                                          "Your Choice / Tua Scelta : "))
+                        if select_changes_to_alunni == 1:
+                            pass
+
+
             else:
                 print("Matricola non trovata")
 
@@ -74,4 +62,3 @@ def modifica_aluno():
             pass
         else:
             pass
-modifica_aluno()
