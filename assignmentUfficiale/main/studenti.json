@@ -1,0 +1,64 @@
+{
+    "lista_alunni": {
+        "MAT008": {
+            "matricola": "MAT008",
+            "nome": "Tommaso",
+            "cognome": "cognome",
+            "email": "roma@gmail.com",
+            "data_creazione": "25/11/2025 17:15:44",
+            "data_modificazione": "25/11/2025 17:15:44"
+        },
+        "MAT009": {
+            "matricola": "MAT009",
+            "nome": "VJ",
+            "cognome": "vj",
+            "email": "vj",
+            "data_creazione": "25/11/2025 22:21:29",
+            "data_modificazione": "25/11/2025 22:21:29"
+        },
+        "MAT010": {
+            "matricola": "MAT010",
+            "nome": "bj",
+            "cognome": "bj",
+            "email": "bj",
+            "data_creazione": "25/11/2025 22:25:55",
+            "data_modificazione": "25/11/2025 22:25:55"
+        },
+        "MAT011": {
+            "matricola": "MAT011",
+            "nome": "mk",
+            "cognome": "mk",
+            "email": "km",
+            "data_creazione": "25/11/2025 22:26:34",
+            "data_modificazione": "25/11/2025 22:26:34"
+        },
+        "MAT012": {
+            "matricola": "MAT012",
+            "nome": "digvj",
+            "cognome": "singh",
+            "email": "rana",
+            "data_creazione": "25/11/2025 22:57:52",
+            "data_modificazione": "25/11/2025 22:57:52"
+        }
+    },
+    "lista_utenti": {
+        "UTENTI0016": {
+            "nome": "vj",
+            "cognome": "bvj",
+            "email": "nk",
+            "user id": "UTENTI0016",
+            "password": "vj",
+            "data_creazione": "25/11/2025 22:25:26",
+            "data_modifica": "25/11/2025 22:25:26"
+        },
+        "UTENTI0017": {
+            "nome": "nk",
+            "cognome": "kn",
+            "email": "kn",
+            "user id": "UTENTI0017",
+            "password": "nk",
+            "data_creazione": "25/11/2025 22:25:34",
+            "data_modifica": "25/11/2025 22:25:34"
+        }
+    }
+}

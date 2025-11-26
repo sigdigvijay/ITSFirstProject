@@ -1,0 +1,53 @@
+
+
+              STUDENT MANAGEMENT SYSTEM
+
+   Please select an option from the following menu :
+
+""""""""1. Insert a new student     """"""""
+""""""""2. View registered students -- Done    """"""""
+3. Modify student's data
+    search by matricola
+    search by email
+    search by keyword
+    return to main menu
+
+4. Delete student's data
+    search by matricola
+    search by email
+    search by keyword
+    view deleted students
+    return to main menu
+
+
+"""""""""""5. Assign Homework to a student"""""""""""
+6. Register Assessment
+7. View Assesments assigned to a student
+
+8. View Stats of the students
+9. Ranking students by Final Marks
+10. Report Homework not completed
+
+11. Save Data
+12. Import Data
+13. View Menu
+
+
+
+
+
+
+
+
+## 🎨 Bonus Features (Opzionali ma Consigliate)
+
+"""""""""""1. **Ricerca veloce** - Cercare alunni per nome/cognome/matricola -- done!!"""""""""""
+2. **Esportazione CSV** - Generare report in formato CSV
+3. **Validazione Email** - Verificare che l'email sia valida
+"""""""""""""""4. **Numero Matricola Univoco** - Evitare duplicati - done !!!"""""""""""""""
+5. **Cancellazione Soft** - Marcare alunni come "archiviati" invece di eliminarli
+6. **Cronologia Modifiche** - Tracciare chi ha modificato cosa e quando
+7. **Filtri Avanzati** - Visualizzare alunni per range di voti
+8. **Tempi di Esecuzione** - Mostrare tempo impiegato per compiti lunghi
+9. **Notifiche Simpatiche** - Emoji e colori nel terminale per feedback
+10. **Importazione Dati** - Caricamento da CSV iniziale
